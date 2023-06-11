@@ -866,8 +866,6 @@ img {
 }
 
 .check-text {
-  display: flex;
-  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -896,7 +894,7 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check:checked + .user-privacy-check {
+.modal-check:checked + .check-text > .user-privacy-check {
   background-color: var(--first-bgc-check);
   border: 1px solid #404bbf;
   border-radius: 2px;
