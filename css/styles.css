@@ -466,7 +466,7 @@ img {
 
 .footer-text {
   display: block;
-  max-width: 264px;
+  min-width: 264px;
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
@@ -515,9 +515,9 @@ img {
   background-color: #31d0aa;
 }
 
-/* .subscribe-container {
+.subscribe-container {
   margin-left: 80px;
-} */
+}
 
 .subscribe-text {
   justify-content: center;
@@ -532,6 +532,7 @@ img {
 
 .footer-form {
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   gap: 24px;
 }
