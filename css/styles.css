@@ -533,6 +533,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 24;
 }
 
 .footer-label {
@@ -540,6 +541,11 @@ img {
 }
 
 .subscribe-input {
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   outline: transparent;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -583,6 +589,7 @@ img {
 
 .send-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 /**PORTFOLIO **/
@@ -781,6 +788,10 @@ img {
   margin-bottom: 8px;
 }
 
+.modal-filed-comment {
+  margin-bottom: 16px;
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
@@ -789,6 +800,8 @@ img {
   padding-left: 38px;
   padding-right: 10px;
   outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -806,8 +819,8 @@ img {
 
 .input-label {
   font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
@@ -818,21 +831,36 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment {
   width: 100%;
   height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
   outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment:focus {
+  border-color: #4d5ae5;
 }
 
 .modal-comment::placeholder {
   font-size: 12px;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-filed-checkbox {
+  margin-bottom: 24px;
 }
 
 .check-text {
@@ -851,22 +879,25 @@ img {
   color: #4d5ae5;
 }
 
-.check-text span {
+.user-privacy-check {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-check:checked + .check-text span {
+
+.modal-check:checked + .user-privacy-check {
   background-color: #404bbf;
   border: 1px solid #404bbf;
   border-radius: 2px;
   fill: #f4f4fd;
+  border: none; 
 }
 
 .send-btn {
