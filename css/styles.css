@@ -533,7 +533,6 @@ img {
 
 .footer-form {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 24px;
 }
@@ -854,6 +853,7 @@ img {
 
 .modal-comment:focus {
   border-color: #4d5ae5;
+  color: #2e2f42;
 }
 
 .modal-comment::placeholder {
